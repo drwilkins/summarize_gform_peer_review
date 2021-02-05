@@ -1,0 +1,27 @@
+---
+title: "HMMS 2021 Interactive Fiction Competition Feedback"
+output: pdf_document
+params:
+  feedback: NULL
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+df=params$feedback
+```
+# Author: ``r df$Author[i]``
+# Story: ``r df$Title[i]``
+<hr>
+### Reviewer: `r df$reviewer[i]`
+### Reviewer Type: `r df$revRole2[i]`
+
+### Major Feedback
+``r df$major[i]``
+
+### Minor Feedback
+``r df$minor[i]``
+
+### Other Feedback
+``r df$kudos[i]``
+\pagebreak
+
